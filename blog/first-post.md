@@ -8,3 +8,7 @@ Hi there we are going to create something amazing here !
 <p class='right'>test</p>
 
 test1
+
+```html
+<p style='text-align:right'>test</p>
+```
