@@ -5,10 +5,8 @@ title: To jest mój pierwszy post
 ---
 Test 1
 
-```html
-<p class='center'>Test 2</p>
-```
+<p align='center'>centered</p>
 
-`<p class='center'>Test 3</p>`
+<p align='right'>right</p>
 
 ![](assets/zdjecie.png)
