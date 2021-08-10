@@ -9,6 +9,10 @@ Test 1
 
 <p align='right'>right</p>
 
-<p color='yellow'>yellow</p>
+<p style='color: red'>color 1</p>
+
+<p style='color: blue'>color 2</p>
+
+**wszystko działa git !**
 
 ![](assets/zdjecie.png)
