@@ -9,4 +9,6 @@ Test 1
 
 <p align='right'>right</p>
 
+<p color='yellow'>yellow</p>
+
 ![](assets/zdjecie.png)
