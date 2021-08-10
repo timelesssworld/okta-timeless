@@ -5,7 +5,7 @@ title: To jest mój pierwszy post
 ---
 Test 1
 
-```
+```html
 <p style='text-align:right'>Test 2</p>
 ```
 
