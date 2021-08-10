@@ -9,9 +9,9 @@ Test 1
 
 <p align='right'>right</p>
 
-<p style='color: red'>color 1</p>
+<p style='color: red;font-size: 4rem'>czerwony</p>
 
-<p style='color: blue'>color 2</p>
+<p style='color: blue'>wszelkie style mozna dodać pomiedzy cudzysłowem ;-)</p>
 
 **wszystko działa git !**
 
