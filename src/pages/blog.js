@@ -1,13 +1,13 @@
 import React from 'react'
 
 import BlogRoll from '../components/BlogRoll'
-
+import Logo from '../components/Logo'
 class BlogIndexPage extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <h1>Latest Posts</h1>
         <section>
+          <Logo/>
           <div className="content">
             <BlogRoll />
           </div>
