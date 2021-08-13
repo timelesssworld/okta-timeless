@@ -3,11 +3,15 @@ import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import LeftFooter from './LeftFooter'
 import '../styles/index.css'
+import Logo from './Logo'
 function BlogRoll({data}){
   const posts = data.allMarkdownRemark.edges
   console.log(posts)
   return(
+    <div>
+      <Logo/>
   <div className='blog-post__container'>
+    <Link to='/kontakt'>Kontakt</Link>
     <LeftFooter/>
     <div className="blog-post">
     {
@@ -19,6 +23,7 @@ function BlogRoll({data}){
       ))
     }
     </div>
+  </div>
   </div>)
 }
 BlogRoll.propTypes = {

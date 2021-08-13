@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Logo from '../components/Logo'
 import LeftFooter from "../components/LeftFooter"
 import '../styles/index.css'
+import { Link } from "gatsby"
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
@@ -12,6 +13,7 @@ export default function Template({
     <div>
       <Logo/>
         <div className="blog-post__container  ">
+          <Link to='/kontakt'>Kontakt</Link>
           <LeftFooter/>
           <div className='blog-post'>
             <h1>{frontmatter.title}</h1>

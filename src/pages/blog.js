@@ -1,13 +1,13 @@
 import React from 'react'
 
 import BlogRoll from '../components/BlogRoll'
-import Logo from '../components/Logo'
+// import Logo from '../components/Logo'
+// import { Link } from '@reach/router'
 class BlogIndexPage extends React.Component {
   render() {
     return (
       <React.Fragment>
         <section>
-          <Logo/>
           <div className="content">
             <BlogRoll />
           </div>
