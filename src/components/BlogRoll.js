@@ -1,32 +1,26 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
-
-class BlogRoll extends React.Component {
-  render() {
-    const { data } = this.props;
-    const { edges: posts } = data.allMarkdownRemark;
-    return (
-      <div className="columns is-multiline">
-        {posts &&
-          posts.map(({ node: post }) => (
-            <div key={post.id}>
-                <p>
-                  {post.frontmatter.date}
-                </p>
-                <p>
-                  {post.excerpt}
-                </p>
-                <Link className="button" to={post.frontmatter.path}>
-                  Keep Reading →
-                </Link>
-            </div>
-          ))}
-      </div>
-    )
-  }
+import LeftFooter from './LeftFooter'
+import '../styles/index.css'
+function BlogRoll({data}){
+  const posts = data.allMarkdownRemark.edges
+  console.log(posts)
+  return(
+  <div className='blog-post__container'>
+    <LeftFooter/>
+    <div className="blog-post">
+    {
+      posts.map(({node:post})=>(
+        <div key={post.id}>
+          <p>{post.excerpt}</p>
+          <Link to={post.frontmatter.path}>kliknij tu !</Link>
+        </div>
+      ))
+    }
+    </div>
+  </div>)
 }
-
 BlogRoll.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
@@ -56,7 +50,7 @@ const query = () => (
         }
       }
     `}
-    render={(data, count) => <BlogRoll data={data} count={count} />}
+    render={(data) => <BlogRoll data={data}/>}
   />
 )
 
