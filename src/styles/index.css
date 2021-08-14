@@ -1,0 +1,31 @@
+@import 'logo.css';
+@import 'leftFooter.css';
+@import url('https://fonts.googleapis.com/css2?family=Charmonman&display=swap');
+:root {
+    --grey: #54595F;
+}
+*, *::before, *::after {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--grey);
+    font-family: 'Charmonman', cursive;
+}
+.contact{
+    padding-right:50px;
+    text-align:right;
+    font-size: 2rem;
+    border-bottom: 1px solid #54595F;
+}
+.blog-post__container{ 
+    display:  flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+}
+.blog-post{
+    margin: 7% 5%;
+    width: 70%;
+}

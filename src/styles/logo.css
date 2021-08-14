@@ -1,0 +1,10 @@
+.logo__link{
+    display: block;
+    text-align: center;
+    width: 600px;
+    margin: 10vh auto 0;
+    max-width:100%;
+}
+.logo__image{
+    width: 100%;
+}

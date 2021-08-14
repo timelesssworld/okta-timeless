@@ -1,12 +1,10 @@
 import React from 'react'
-import { Link } from 'gatsby'
-
+// import { Link } from 'gatsby'
+import BlogIndexPage from './blog'
 const index = () => {
-  return (
-    <>
-      Hello world!
-      <p><Link to="/blog">View Blog</Link></p>
-    </>)
+  return(
+    <BlogIndexPage/>
+  )
 }
 
 export default index
