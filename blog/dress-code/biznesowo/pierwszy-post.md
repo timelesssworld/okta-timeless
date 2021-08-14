@@ -1,7 +1,7 @@
 ---
 path: /blog/first-post
-date: 2021-08-10T18:48:13.314Z
-title: To jest mój drugi post
+date: 2021-07-10T18:48:13.314Z
+title: To jest mój pierwszy post
 ---
 Test 2
 
@@ -13,6 +13,6 @@ Test 2
 
 <p style='color: blue'>wszelkie style mozna dodać pomiedzy cudzysłowem ;-)</p>
 
-**wszystko działa git !**
+**wszystko działa git pierwsza wersja**
 
 ![](assets/zdjecie.png)
