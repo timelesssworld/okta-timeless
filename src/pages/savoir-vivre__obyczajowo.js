@@ -1,12 +1,12 @@
 import React from 'react'
 import Layout from '../components/Layout'
 
-function errorPage() {
+function index() {
     return (
         <Layout>
-            Jesteś na złym linku
+            akjskfa
         </Layout>
     )
 }
 
-export default errorPage
+export default index

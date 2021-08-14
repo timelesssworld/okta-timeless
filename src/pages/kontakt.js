@@ -2,14 +2,13 @@ import React from 'react'
 import LeftFooter from '../components/LeftFooter'
 import Logo from '../components/Logo'
 import { Link } from 'gatsby'
+import Menu from '../components/Menu'
+import Layout from '../components/Layout'
 function Contact() {
     return (
-        <div>
-            <div className='contact'><Link to='/kontakt'>Kontakt</Link></div>
-            <Logo/>
-            <LeftFooter/>
+        <Layout>
             To jest strona z kontaktem
-        </div>
+        </Layout>
     )
 }
 
