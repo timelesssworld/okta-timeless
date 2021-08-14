@@ -1,9 +1,9 @@
 ---
 path: /blog/first-post
-date: 2021-06-10T18:48:13.314Z
-title: To jest mój pierwszy post
+date: 2021-08-10T18:48:13.314Z
+title: To jest mój trzeci post
 ---
-Test 1
+Test 3
 
 <p align='center'>centered</p>
 
@@ -13,6 +13,6 @@ Test 1
 
 <p style='color: blue'>wszelkie style mozna dodać pomiedzy cudzysłowem ;-)</p>
 
-**wszystko działa git pierwsza wersja**
+**wszystko działa trzecia wersja!**
 
 ![](assets/zdjecie.png)

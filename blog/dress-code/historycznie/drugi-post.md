@@ -1,6 +1,6 @@
 ---
 path: /blog/first-post
-date: 2021-08-10T18:48:13.314Z
+date: 2021-07-10T18:48:13.314Z
 title: To jest mój drugi post
 ---
 Test 2
