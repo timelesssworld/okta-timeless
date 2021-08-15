@@ -1,5 +1,5 @@
 ---
-path: /blog/dress-code/biznesowo
+path: /blog/dress-code/biznesowo/
 date: 2021-06-10T18:48:13.314Z
 title: To jest mój pierwszy post
 ---
