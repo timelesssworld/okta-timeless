@@ -1,38 +1,29 @@
-// import React from 'react'
-// import Layout from '../components/Layout'
-
-// function index() {
-//     return (
-//         <Layout>
-//             kjasdjisji
-//         </Layout>
-//     )
-// }
-
-// export default index
-
-
-
-
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql, StaticQuery } from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby'
 import '../styles/index.css'
 import Layout from '../components/Layout'
+import Post from '../components/Post'
 export function SavoirVivre({data}){
   const posts = data.allMarkdownRemark.edges
-  console.log(posts)
+  const newPosts = posts.map(({node:post})=>{
+    if(checkPath(`${post.frontmatter.path}`))
+    return post
+    else return ''
+  })
+  console.log(newPosts)
   return(
   <Layout>
     {
-    posts.map(({node:post})=>(
-      <div key={post.id}>
-        <p>{post.excerpt}</p>
-        <Link to={post.frontmatter.path}>kliknij tu !</Link>
-      </div>
-    ))
+      newPosts.map((post,id)=>(
+        <Post post={post} id={id}/>
+      ))
     }
   </Layout>)
+}
+function checkPath(pathToCheck){
+  const properPath = new RegExp('\/blog\/savoir-vivre\/.*')
+  return properPath.test(pathToCheck)
 }
 SavoirVivre.propTypes = {
   data: PropTypes.shape({
@@ -44,7 +35,7 @@ SavoirVivre.propTypes = {
 const query = () => (
   <StaticQuery
     query={graphql`
-      query BlogRoll {
+      query SavoirVivre {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
         ) {

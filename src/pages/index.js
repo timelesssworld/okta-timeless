@@ -1,9 +1,9 @@
 import React from 'react'
 // import { Link } from 'gatsby'
-import BlogIndexPage from './blog'
+import BlogRoll from '../components/BlogRoll'
 const index = () => {
   return(
-    <BlogIndexPage/>
+    <BlogRoll/>
   )
 }
 
