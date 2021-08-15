@@ -22,7 +22,7 @@ export function SavoirVivre({data}){
   </Layout>)
 }
 function checkPath(pathToCheck){
-  const properPath = new RegExp('\/blog\/savoir-vivre\/.*')
+  const properPath = new RegExp('/blog/savoir-vivre/.*')
   return properPath.test(pathToCheck)
 }
 SavoirVivre.propTypes = {

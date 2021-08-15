@@ -1,5 +1,5 @@
 ---
-path: /blog/dress-code/biznesowo
+path: /blog/dress-code/nigdy-narodowo
 date: 2021-06-10T18:48:13.314Z
 title: To jest mój pierwszy post
 ---
@@ -13,6 +13,6 @@ Test 1
 
 <p style='color: blue'>wszelkie style mozna dodać pomiedzy cudzysłowem ;-)</p>
 
-**wszystko działa git pierwsza wersja**
+**wszystko działa git pierwsza wersja bieznesowo**
 
 ![](assets/zdjecie.png)
