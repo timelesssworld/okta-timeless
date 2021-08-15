@@ -3,10 +3,10 @@ import React from 'react'
 
 const Post = ({post,id})=> {
     return (
-        <div key={id}>
+        <p key={id}>
           {post.excerpt}
           <Link to={post.excerpt?post.frontmatter.path:'/'}>{post.excerpt?'Kliknij tu!':''}</Link>
-        </div>
+        </p>
     )
 }
 export default Post

@@ -22,7 +22,7 @@ export function DressCode({data}){
   </Layout>)
 }
 function checkPath(pathToCheck){
-  const properPath = new RegExp('\/blog\/dress-code\/.*')
+  const properPath = new RegExp('/blog/dress-code/.*')
   return properPath.test(pathToCheck)
 }
 DressCode.propTypes = {

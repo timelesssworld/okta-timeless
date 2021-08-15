@@ -1,5 +1,5 @@
 ---
-path: /blog/savoir-vivre/biznesowo/
+path: /blog/savoir-vivre/biznesowo
 date: 2021-08-10T18:48:13.314Z
 title: To jest mój trzeci post
 ---
