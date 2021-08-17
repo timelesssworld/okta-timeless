@@ -2,6 +2,7 @@ import { Link } from 'gatsby'
 import React from 'react'
 
 const Post = ({post,id})=> {
+  console.log(post)
     return (
         <p key={id}>
           {post.excerpt}

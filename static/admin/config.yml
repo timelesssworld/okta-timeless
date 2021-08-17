@@ -12,7 +12,8 @@ collections:
     folder: blog
     create: true
     fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+      - { name: path, label: ŚCIEŻKA }
+      - { name: date, label: DATA, widget: datetime }
+      - { name: title, label: TYTUŁ }
+      - { name: image, label: ZDJĘCIE, widget: image}
+      - { name: body, label: ARTYKUŁ, widget: markdown }
