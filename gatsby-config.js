@@ -10,6 +10,20 @@
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`, // Needed for dynamic images
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-remark-relative-images`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              
+            }
+          }
+        ]
+      }
+    },
+    {
       resolve:
         `gatsby-source-filesystem`,
       options: {
