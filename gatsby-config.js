@@ -17,7 +17,9 @@
           {
             resolve: `gatsby-remark-images`,
             options: {
-              
+              linkImagesToOriginal: false,
+              withWebp: true,
+              quality: 50
             }
           }
         ]
