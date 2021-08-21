@@ -3,7 +3,10 @@ import React from 'react'
 import BlogRoll from '../components/BlogRoll'
 const index = () => {
   return(
-    <BlogRoll/>
+    <>
+      <BlogRoll/>
+      
+    </>
   )
 }
 

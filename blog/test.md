@@ -1,10 +1,8 @@
 ---
-path: /blog/savoir-vivre/historycznie
-date: 2021-08-14T08:50:32.848Z
-title: Savoir Vivre historycznie
+path: /blog/dress-code/biznesowo
+date: 2021-06-10T18:48:13.314Z
+title: To jest mój pierwszy post
 ---
-Savoir Vivre historycznie
-
 Test 1
 
 <p align='center'>centered</p>
@@ -15,6 +13,6 @@ Test 1
 
 <p style='color: blue'>wszelkie style mozna dodać pomiedzy cudzysłowem ;-)</p>
 
-**wszystko działa git !**
+**wszystko działa git pierwsza wersja**
 
-![](assets/zdjecie.png)
+![](../static/assets/zdjecie.png)
