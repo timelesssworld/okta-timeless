@@ -6,4 +6,4 @@ image: assets/zdjecie.png
 ---
 kolejny test z obrazkiem
 
-![](assets/man-walking-dog.jpg)
+!['czlowiek_i_pies'](assets/man-walking-dog.jpg)

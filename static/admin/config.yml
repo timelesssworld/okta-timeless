@@ -3,8 +3,8 @@ backend:
   repo: frontend112/okta-timeless
   branch: master
   
-media_folder: static/assets
-public_folder: assets
+media_folder: blog/assets
+public_folder: blog
   
 collections:
   - name: blog
