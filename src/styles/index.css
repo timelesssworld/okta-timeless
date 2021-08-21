@@ -30,3 +30,7 @@
     margin: 7% 5%;
     width: 70%;
 }
+/* fix problem with menu behind pictures */
+img{
+    z-index: -1;
+}

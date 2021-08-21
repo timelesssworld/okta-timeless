@@ -47,6 +47,17 @@ const query = () => (
                 path
                 title
                 date(formatString: "MMMM DD, YYYY")
+                image {
+                  childImageSharp {
+                    gatsbyImageData(
+                      width: 200
+                      blurredOptions: {width: 100}
+                      placeholder: BLURRED
+                      transformOptions: {cropFocus: CENTER}
+                      aspectRatio: 0.7
+                    )
+                  }
+                }
               }
             }
           }
