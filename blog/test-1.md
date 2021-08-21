@@ -6,4 +6,4 @@ image: assets/zdjecie.png
 ---
 kolejny test z obrazkiem
 
-![człowiek z psem](assets/man-walking-dog.jpg)
+![czlowiek z psem](assets/man-walking-dog.jpg)
