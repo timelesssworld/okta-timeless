@@ -8,4 +8,4 @@ testuję poprawność wszystkiego
 
 <p align=''center">wycentrowany text</p>
 
-<p style=''color:red">wycentrowany text</p>
+<p style=''color:red">czerwony text</p>
