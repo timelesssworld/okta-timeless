@@ -20,7 +20,7 @@
     font-size: 2rem;
     border-bottom: 1px solid #54595F;
 }
-.blog-post__container{ 
+.blog-post__container{
     display:  flex;
     flex-direction: row;
     width: 90%;
@@ -30,7 +30,10 @@
     margin: 7% 5%;
     width: 70%;
 }
-/* fix problem with menu behind pictures */
-img{
-    z-index: -1;
+/* fix problem with menu: */
+.icon-image{
+    margin-top:150px;
+}
+.icon-image img{
+    z-index:-1;
 }
