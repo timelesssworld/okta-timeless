@@ -1,5 +1,5 @@
 ---
-path: /blog/dress-code/nigdy-narodowo
+path: /blog/savoir-vivre/nigdy-narodowo
 date: 2021-08-23T17:38:02.382Z
 title: szósty
 mainImage: assets/testtt.jpg
