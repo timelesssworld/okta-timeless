@@ -41,7 +41,7 @@ const query = () => (
                 path
                 title
                 date(formatString: "MMMM DD, YYYY")
-                image {
+                mainimage {
                   childImageSharp {
                     gatsbyImageData(
                       width: 500

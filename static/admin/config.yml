@@ -15,5 +15,5 @@ collections:
       - { name: path, label: ŚCIEŻKA }
       - { name: date, label: DATA, widget: datetime }
       - { name: title, label: TYTUŁ }
-      - { name: image, label: ZDJĘCIE, widget: image}
+      - { name: mainimage, label: ZDJĘCIE, widget: image}
       - { name: body, label: ARTYKUŁ, widget: markdown }
