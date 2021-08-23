@@ -6,12 +6,12 @@ import Layout from '../components/Layout'
 import Post from '../components/Post'
 export function DressCodeBiznesowo({data}){
   const posts = data.allMarkdownRemark.edges
-  const newPosts = posts.map(({node:post})=>{
+  let newPosts = posts.map(({node:post})=>{
     if(checkPath(`${post.frontmatter.path}`))
     return post
     else return ''
   })
-  console.log(newPosts)
+  newPosts = newPosts.filter(function(v){return v!==''});
   return(
   <Layout>
     {

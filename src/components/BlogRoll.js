@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import '../styles/index.css'
 import Layout from './Layout.js'
+import { getImage, GatsbyImage } from 'gatsby-plugin-image'
+import '../styles/index.css'
 function BlogRoll({data}){
   const posts = data.allMarkdownRemark.edges
   console.log(posts)
@@ -10,8 +12,11 @@ function BlogRoll({data}){
   <Layout>
     {
     posts.map(({node:post})=>(
-      <div key={post.id}>
-        <p>{post.excerpt}</p>
+      <div className='icon-image' key={post.id}>
+          <p>{post.frontmatter.title}</p>
+          <GatsbyImage image={
+            getImage(post.frontmatter.mainImage?post.frontmatter.mainImage:'')} alt='mainimage'
+          />
         <Link to={post.frontmatter.path}>kliknij tu !</Link>
       </div>
     ))
@@ -44,7 +49,7 @@ const query = () => (
                 mainImage {
                   childImageSharp {
                     gatsbyImageData(
-                      width: 500
+                      width: 200
                       blurredOptions: {width: 100}
                       placeholder: BLURRED
                       transformOptions: {cropFocus: CENTER}

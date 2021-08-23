@@ -5,9 +5,13 @@ import '../styles/index.css'
 const Post = ({post,id})=> {
   return (
     <div key={id}> 
-      <p className='icon-image'><GatsbyImage image={getImage(post.frontmatter.mainImage)} alt='mainimage'/></p>
-      <p>{post.excerpt}</p>
-      <p><Link to={post.excerpt?post.frontmatter.path:'/'}>{post.excerpt?'Kliknij tu!':''}</Link></p>  
+      <p className='icon-image'>
+        <p>{post.frontmatter.title}</p>
+        <GatsbyImage image={
+          getImage(post.frontmatter.mainImage)} alt='mainimage'
+        />
+        <p><Link to={post.frontmatter.path}>Kliknij tu</Link></p>  
+      </p>
     </div>
   )
 }
