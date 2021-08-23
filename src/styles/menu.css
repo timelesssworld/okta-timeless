@@ -38,3 +38,9 @@
     border-top: 1px solid #54595F;
     background-color: #f1f1eb;
 }
+.menu__item:hover .menu__dress-code--hidden{
+    visibility: visible;
+}
+.menu__item:hover .menu__savoir-vivre--hidden{
+    visibility: visible;
+}
