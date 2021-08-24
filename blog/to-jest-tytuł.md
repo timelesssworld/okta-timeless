@@ -1,5 +1,5 @@
 ---
-path: /blog/savoir-vivre/biznesowo
+path: /blog/savoir-vivre/biznesowo/to-jest-tytul
 date: 2021-08-24T18:29:51.880Z
 title: to jest tytuł
 mainImage: assets/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg
