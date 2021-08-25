@@ -4,14 +4,12 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import '../styles/index.css'
 const Post = ({post,id})=> {
   return (
-    <div key={id}> 
-      <p className='icon-image'>
-        <p>{post.frontmatter.title}</p>
-        <GatsbyImage image={
+    <div key={id} className='blog-list__wrapper'> 
+        <GatsbyImage className='blog-list blog-list--picture' image={
           getImage(post.frontmatter.mainImage)} alt='mainimage'
-        />
-        <p><Link to={post.frontmatter.path}>Kliknij tu</Link></p>  
-      </p>
+          />
+        <p className='blog-list blog-list--title' >{post.frontmatter.title}</p>
+        <p className='blog-list blog-list--link' ><Link to={post.frontmatter.path}>Kliknij tu</Link></p>  
     </div>
   )
 }

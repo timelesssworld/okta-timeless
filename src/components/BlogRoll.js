@@ -12,12 +12,12 @@ function BlogRoll({data}){
   <Layout>
     {
     posts.map(({node:post})=>(
-      <div className='icon-image' key={post.id}>
-          <p>{post.frontmatter.title}</p>
-          <GatsbyImage image={
+      <div key={post.id} className='blog-list__wrapper'>
+          <GatsbyImage className='blog-list blog-list--picture' image={
             getImage(post.frontmatter.mainImage?post.frontmatter.mainImage:'')} alt='mainimage'
-          />
-        <Link to={post.frontmatter.path}>kliknij tu !</Link>
+            />
+          <p className='blog-list blog-list--title'>{post.frontmatter.title}</p>
+          <p className='blog-list blog-list--link'><Link to={post.frontmatter.path}>kliknij tu !</Link></p>
       </div>
     ))
     }

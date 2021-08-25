@@ -9,11 +9,9 @@ const Layout = props => {
             <div className='contact'><Link to='/kontakt'>Kontakt</Link></div>
             <Logo/>
             <Menu/>
-            <div className="blog-post__container  ">
+            <div className="blog-post__container">
                 <LeftFooter/>
-                <div className='blog-post'>
-                    {props.children}
-                </div>
+                {props.children}
             </div>
         </>
     )
