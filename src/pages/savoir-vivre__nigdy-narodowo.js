@@ -22,7 +22,7 @@ export function SavoirVivreNigdyNarodowo({data}){
   </Layout>)
 }
 function checkPath(pathToCheck){
-  const properPath = new RegExp('/blog/savoir-vivre/nigdy-narodowo')
+  const properPath = new RegExp('/blog/savoir-vivre/nigdy-narodowo/.*')
   return properPath.test(pathToCheck)
 }
 SavoirVivreNigdyNarodowo.propTypes = {

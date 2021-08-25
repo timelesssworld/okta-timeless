@@ -7,7 +7,6 @@ import { getImage, GatsbyImage } from 'gatsby-plugin-image'
 import '../styles/index.css'
 function BlogRoll({data}){
   const posts = data.allMarkdownRemark.edges
-  console.log(posts)
   return(
   <Layout>
     {

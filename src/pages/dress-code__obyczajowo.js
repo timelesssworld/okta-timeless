@@ -22,7 +22,7 @@ export function DressCodeObyczajowo({data}){
   </Layout>)
 }
 function checkPath(pathToCheck){
-  const properPath = new RegExp('/blog/dress-code/obyczajowo')
+  const properPath = new RegExp('/blog/dress-code/obyczajowo/.*')
   return properPath.test(pathToCheck)
 }
 DressCodeObyczajowo.propTypes = {

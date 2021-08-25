@@ -22,7 +22,7 @@ export function DressCodeHistorycznie({data}){
   </Layout>)
 }
 function checkPath(pathToCheck){
-  const properPath = new RegExp('/blog/dress-code/historycznie')
+  const properPath = new RegExp('/blog/dress-code/historycznie/.*')
   return properPath.test(pathToCheck)
 }
 DressCodeHistorycznie.propTypes = {

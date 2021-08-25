@@ -22,7 +22,7 @@ export function SavoirVivreNigdyHistorycznie({data}){
   </Layout>)
 }
 function checkPath(pathToCheck){
-  const properPath = new RegExp('/blog/savoir-vivre/historycznie')
+  const properPath = new RegExp('/blog/savoir-vivre/historycznie/.*')
   return properPath.test(pathToCheck)
 }
 SavoirVivreNigdyHistorycznie.propTypes = {
