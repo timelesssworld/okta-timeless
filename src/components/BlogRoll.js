@@ -9,17 +9,21 @@ function BlogRoll({data}){
   const posts = data.allMarkdownRemark.edges
   return(
   <Layout>
-    {
-    posts.map(({node:post})=>(
-      <div key={post.id} className='blog-list__wrapper'>
-          <GatsbyImage className='blog-list blog-list--picture' image={
-            getImage(post.frontmatter.mainImage?post.frontmatter.mainImage:'')} alt='mainimage'
-            />
-          <p className='blog-list blog-list--title'>{post.frontmatter.title}</p>
-          <p className='blog-list blog-list--link'><Link to={post.frontmatter.path}>kliknij tu !</Link></p>
-      </div>
-    ))
-    }
+    <div className='blog-list__content-wrapper'>
+      {
+      posts.map(({node:post})=>(
+        <div key={post.id} className='blog-list__wrapper'>
+            <GatsbyImage className='blog-list blog-list--picture' image={
+              getImage(post.frontmatter.mainImage?post.frontmatter.mainImage:'')} alt='mainimage'
+              />
+            <div className='blog-list blog-list--description'>
+              <p className='blog-list__title'>{post.frontmatter.title}</p>
+              <p className='blog-list__link'><Link to={post.frontmatter.path}>kliknij tu !</Link></p>
+            </div>
+        </div>
+      ))
+      }
+    </div>
   </Layout>)
 }
 BlogRoll.propTypes = {

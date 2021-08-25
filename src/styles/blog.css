@@ -1,0 +1,10 @@
+.blog-list__content-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10vh 5vw;
+}
+.blog-list__wrapper{
+    flex-basis: 50%;
+    display: flex;
+    align-items:flex-end;
+}
