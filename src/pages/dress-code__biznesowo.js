@@ -22,7 +22,7 @@ export function DressCodeBiznesowo({data}){
   </Layout>)
 }
 function checkPath(pathToCheck){
-  const properPath = new RegExp('/blog/dress-code/biznesowo')
+  const properPath = new RegExp('/blog/dress-code/biznesowo/.*')
   return properPath.test(pathToCheck)
 }
 DressCodeBiznesowo.propTypes = {

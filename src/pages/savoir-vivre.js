@@ -14,11 +14,13 @@ export function SavoirVivre({data}){
   newPosts = newPosts.filter(function(v){return v!==''});
   return(
   <Layout>
-    {
-      newPosts.map((post,id)=>(
-        <Post post={post} id={id}/>
-      ))
-    }
+    <div className='blog-list__content-wrapper'>
+      {
+        newPosts.map((post,id)=>(
+          <Post post={post} id={id}/>
+        ))
+      }
+    </div>
   </Layout>)
 }
 function checkPath(pathToCheck){

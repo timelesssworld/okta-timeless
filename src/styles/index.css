@@ -2,6 +2,7 @@
 @import 'logo.css';
 @import 'menu.css';
 @import 'leftFooter.css';
+@import 'blog.css';
 :root {
     --grey: #54595F;
 }
@@ -20,17 +21,11 @@
     font-size: 2rem;
     border-bottom: 1px solid #54595F;
 }
-.blog-post__container{
-    display:  flex;
-    flex-direction: row;
-    width: 90%;
-    margin: 0 auto;
-}
-.blog-post{
-    margin: 7% 5%;
-    width: 70%;
-}
 /* fix problem with menu: */
 img{
     z-index:-1;
+}
+/* fix probllem with display images on the post */
+.gatsby-resp-image-background-image{
+    background-image: none;
 }
