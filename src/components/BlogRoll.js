@@ -17,6 +17,7 @@ function BlogRoll({data}){
               getImage(post.frontmatter.mainImage?post.frontmatter.mainImage:'')} alt='mainimage'
               />
             <div className='blog-list blog-list--description'>
+              <p className='blog-list__date'>{post.frontmatter.date}</p>
               <p className='blog-list__title'>{post.frontmatter.title}</p>
               <p className='blog-list__link'><Link to={post.frontmatter.path}>kliknij tu !</Link></p>
             </div>
@@ -48,7 +49,7 @@ const query = () => (
               frontmatter {
                 path
                 title
-                date(formatString: "MMMM DD, YYYY")
+                date(formatString: "DD / MM / YYYY")
                 mainImage {
                   childImageSharp {
                     gatsbyImageData(
