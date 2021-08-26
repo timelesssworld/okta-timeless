@@ -25,3 +25,7 @@
 img{
     z-index:-1;
 }
+/* fix probllem with display images on the post */
+.gatsby-resp-image-background-image{
+    background-image: none;
+}
