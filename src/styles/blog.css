@@ -2,9 +2,19 @@
     display: flex;
     flex-wrap: wrap;
     margin: 10vh 5vw;
+    width: 70%;
 }
 .blog-list__wrapper{
     flex-basis: 50%;
     display: flex;
     align-items:flex-end;
+}
+.blog-post__container{
+    display:  flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+}
+.blog-list{
+    padding: 0 1rem;
 }

@@ -21,12 +21,6 @@
     font-size: 2rem;
     border-bottom: 1px solid #54595F;
 }
-.blog-post__container{
-    display:  flex;
-    flex-direction: row;
-    width: 90%;
-    margin: 0 auto;
-}
 /* fix problem with menu: */
 img{
     z-index:-1;

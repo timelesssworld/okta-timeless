@@ -8,8 +8,10 @@ const Post = ({post,id})=> {
         <GatsbyImage className='blog-list blog-list--picture' image={
           getImage(post.frontmatter.mainImage)} alt='mainimage'
           />
-        <p className='blog-list blog-list--title' >{post.frontmatter.title}</p>
-        <p className='blog-list blog-list--link' ><Link to={post.frontmatter.path}>Kliknij tu</Link></p>  
+        <div className='blog-list blog-list--description'>
+          <p className='blog-list blog-list--title' >{post.frontmatter.title}</p>
+          <p className='blog-list blog-list--link' ><Link to={post.frontmatter.path}>Kliknij tu</Link></p> 
+        </div> 
     </div>
   )
 }
