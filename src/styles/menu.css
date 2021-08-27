@@ -45,3 +45,29 @@
 .menu__item:hover .menu__savoir-vivre--hidden{
     visibility: visible;
 }
+.mobile-menu,.mobile-menu__item{
+    display: none;
+}
+/* mobile menu */
+@media only screen and (max-width: 900px){
+    .menu__item{
+        display: none;
+    }
+    .mobile-menu,.mobile-menu__main-links,.mobile-menu__item{
+        display: block;
+    }
+    .mobile-menu__image{
+        height: 80%;
+        cursor:pointer;
+    }
+    /* handle click button */
+    .mobile-menu__main-links--hidden{
+        display: none;
+    }
+
+}
+@media only screen and (min-width: 901px){
+    .mobile-menu__main-links{
+        display: none;
+    }
+}
