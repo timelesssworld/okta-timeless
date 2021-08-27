@@ -3,12 +3,9 @@ import LinkMenuComponent from './LinkMenuComponent'
 import { Link } from 'gatsby'
 import button from '../../static/assets/menu-button.png'
 import MobileMenu from './MobileMenu'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 function Menu() {
     const [isClicked, setIsClicked] = useState(false)
-    useEffect(() => {
-        console.log(isClicked)
-    }, [isClicked])
     return (
         <>
         <ul className='menu__items'>

@@ -3,6 +3,7 @@ import {Link} from 'gatsby'
 import Logo from './Logo'
 import LeftFooter from './LeftFooter'
 import Menu from './Menu'
+import BottomMobileFooter from './BottomMobileFooter'
 const Layout = props => {
     return (
         <>
@@ -13,6 +14,7 @@ const Layout = props => {
                 <LeftFooter/>
                 {props.children}
             </div>
+            <BottomMobileFooter/>
         </>
     )
 }

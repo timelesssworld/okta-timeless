@@ -60,11 +60,14 @@
         height: 80%;
         cursor:pointer;
     }
+    .mobile-menu__item{
+        text-align: center;
+        background-color: #f1f1ebd7;
+    }
     /* handle click button */
     .mobile-menu__main-links--hidden{
         display: none;
     }
-
 }
 @media only screen and (min-width: 901px){
     .mobile-menu__main-links{

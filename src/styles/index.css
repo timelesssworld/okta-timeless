@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Charmonman&display=swap');
 @import 'logo.css';
 @import 'menu.css';
-@import 'leftFooter.css';
 @import 'blog.css';
+@import 'leftFooter.css';
+@import 'bottomMobileFooter.css';
 :root {
     --grey: #54595F;
 }

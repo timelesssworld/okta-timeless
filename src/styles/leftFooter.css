@@ -10,3 +10,12 @@
 .left-footer__picture{
     max-width:100%;
 }
+/* on mobile hide this left footer and move to the bottom */
+@media only screen and (max-width: 900px){
+    .left-footer{
+        display: none;
+    }
+    .blog-list__content-wrapper{
+        width: 100%;
+    }
+}
