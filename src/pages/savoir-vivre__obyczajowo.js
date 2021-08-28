@@ -13,13 +13,16 @@ export function SavoirVivreObyczajowo({data}){
   })
   newPosts = newPosts.filter(function(v){return v!==''});
   return(
-  <Layout>
-    {
-      newPosts.map((post,id)=>(
-        <Post post={post} id={id}/>
-      ))
-    }
-  </Layout>)
+    <Layout>
+    <div className='blog-list__content-wrapper'>
+      {
+        newPosts.map((post,id)=>(
+          <Post post={post} id={id}/>
+        ))
+      }
+    </div>
+  </Layout>
+  )
 }
 function checkPath(pathToCheck){
   const properPath = new RegExp('/blog/savoir-vivre/obyczajowo/.*')

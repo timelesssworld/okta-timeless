@@ -50,6 +50,13 @@
 }
 /* mobile menu */
 @media only screen and (max-width: 900px){
+    .mobile-menu__wrapper{
+        display:flex;
+        width: 100%;
+    }
+    .mobile-menu__main-links{
+        width: 50%;
+    }
     .menu__item{
         display: none;
     }

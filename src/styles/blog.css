@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     margin: 10vh 5vw;
     width: auto;
+    align-items: flex-end;
 }
 .blog-list__wrapper{
     flex-basis: 50%;
@@ -13,9 +14,10 @@
 .blog-post__container{
     display:  inline-block;
     width: 80%;
+    margin-bottom: 1vh;
 }
 .blog-list{
-    padding: 0 1rem;
+    padding:0 1px 0 1rem;
 }
 .blog-post__single-post__wrapper{
     margin: 10vh 5vw;
@@ -31,5 +33,8 @@
 @media only screen and (max-width: 500px){
     .blog-list__wrapper{
         display:block;
+    }
+    .blog-list{
+        padding:0;
     }
 }
