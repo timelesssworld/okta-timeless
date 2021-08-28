@@ -11,10 +11,10 @@
     padding-bottom:5px;
 }
 .blog-post__container{
-    display:  flex;
-    flex-direction: row;
-    width: 90%;
-    margin: 0 auto;
+    display:  inline-block;
+    /* flex-direction: row; */
+    width: 80%;
+    /* padding: 0 0 0 20%; */
 }
 .blog-list{
     padding: 0 1rem;

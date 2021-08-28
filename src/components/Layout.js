@@ -10,8 +10,8 @@ const Layout = props => {
             <div className='contact'><Link to='/kontakt'>Kontakt</Link></div>
             <Logo/>
             <Menu/>
+            <LeftFooter/>
             <div className="blog-post__container">
-                <LeftFooter/>
                 {props.children}
             </div>
             <BottomMobileFooter/>

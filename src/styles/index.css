@@ -25,6 +25,7 @@
 /* fix problem with menu: */
 img{
     z-index:-1;
+    max-width: 100%;
 }
 /* fix probllem with display images on the post */
 .gatsby-resp-image-background-image{

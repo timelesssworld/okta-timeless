@@ -4,9 +4,16 @@
     margin-top: 10vh;
     border-right: 1px solid #999;
     padding-right: 2vw;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
+    position:-webkit-sticky;
+    position:sticky;
+    top:10px;
+    left:1%;
 }
+.blog-post__container{
+    position: relative;
+}
+
 .left-footer__picture{
     max-width:100%;
 }
@@ -19,3 +26,4 @@
         width: 100%;
     }
 }
+
