@@ -14,11 +14,13 @@ export function SavoirVivreNigdyBiznesowo({data}){
   newPosts = newPosts.filter(function(v){return v!==''});
   return(
   <Layout>
-    {
-      newPosts.map((post,id)=>(
-        <Post post={post} id={id}/>
-      ))
-    }
+    <div className='blog-list__content-wrapper'>
+      {
+        newPosts.map((post,id)=>(
+          <Post post={post} id={id}/>
+        ))
+      }
+    </div>
   </Layout>)
 }
 function checkPath(pathToCheck){
@@ -46,7 +48,7 @@ const query = () => (
               frontmatter {
                 path
                 title
-                date(formatString: "MMMM DD, YYYY")
+                date(formatString: "DD/MM/YYYY")
                 mainImage {
                   childImageSharp {
                     gatsbyImageData(

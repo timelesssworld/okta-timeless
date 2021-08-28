@@ -4,7 +4,7 @@ import { graphql, StaticQuery } from 'gatsby'
 import '../styles/index.css'
 import Layout from '../components/Layout'
 import Post from '../components/Post'
-export function DressCodeNigdyNarodowo({data}){
+export function DressCodeMiedzynarodowo({data}){
   const posts = data.allMarkdownRemark.edges
   let newPosts = posts.map(({node:post})=>{
     if(checkPath(`${post.frontmatter.path}`))
@@ -13,19 +13,22 @@ export function DressCodeNigdyNarodowo({data}){
   })
   newPosts = newPosts.filter(function(v){return v!==''});
   return(
-  <Layout>
-    {
-      newPosts.map((post,id)=>(
-        <Post post={post} id={id}/>
-      ))
-    }
-  </Layout>)
+    <Layout>
+    <div className='blog-list__content-wrapper'>
+      {
+        newPosts.map((post,id)=>(
+          <Post post={post} id={id}/>
+        ))
+      }
+    </div>
+  </Layout>
+  )
 }
 function checkPath(pathToCheck){
-  const properPath = new RegExp('/blog/dress-code/biznesowo/.*')
+  const properPath = new RegExp('/blog/dress-code/miedzynarodowo/.*')
   return properPath.test(pathToCheck)
 }
-DressCodeNigdyNarodowo.propTypes = {
+DressCodeMiedzynarodowo.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -35,7 +38,7 @@ DressCodeNigdyNarodowo.propTypes = {
 const query = () => (
   <StaticQuery
     query={graphql`
-      query DressCodeNigdyNarodowo {
+      query DressCodeMiedzynarodowo {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
         ) {
@@ -46,7 +49,7 @@ const query = () => (
               frontmatter {
                 path
                 title
-                date(formatString: "MMMM DD, YYYY")
+                date(formatString: "DD/MM/YYYY")
                 mainImage {
                   childImageSharp {
                     gatsbyImageData(
@@ -64,7 +67,7 @@ const query = () => (
         }
       }
     `}
-    render={(data) => <DressCodeNigdyNarodowo data={data}/>}
+    render={(data) => <DressCodeMiedzynarodowo data={data}/>}
   />
 )
 

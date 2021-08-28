@@ -1,12 +1,26 @@
 .left-footer{
     width: 20%;
     line-height: 2rem;
-    margin-top: 200px;
+    margin-top: 10vh;
     border-right: 1px solid #999;
     padding-right: 2vw;
-    display: flex;
-    flex-direction: column;
+    display: block;
+    float:left;
+    position:-webkit-sticky;
+    position:sticky;
+    top:10px;
+    left:1%;
 }
 .left-footer__picture{
     max-width:100%;
 }
+/* on mobile hide this left footer and move to the bottom */
+@media only screen and (max-width: 900px){
+    .left-footer{
+        display: none;
+    }
+    .blog-list__content-wrapper{
+        width: 100%;
+    }
+}
+
