@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: 10vh 5vw;
-    width: 70%;
+    width: 100%;
 }
 .blog-list__wrapper{
     flex-basis: 50%;
@@ -21,7 +21,7 @@
 }
 .blog-post__single-post__wrapper{
     margin: 10vh 10vw;
-    width: 90%; 
+    width: 100%; 
 }
 /* mobile blog list*/
 @media only screen and (max-width: 1000px){
