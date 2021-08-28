@@ -10,7 +10,7 @@ export default function LinkMenuComponent(props) {
                 <li className={`menu__${props.linkName}__item`}><Link to={`/${props.linkName}__historycznie`}>historycznie</Link></li>
                 <li className={`menu__${props.linkName}__item`}><Link to={`/${props.linkName}__obyczajowo`}>obyczajowo</Link></li>
                 <li className={`menu__${props.linkName}__item`}><Link to={`/${props.linkName}__biznesowo`}>biznesowo</Link></li>
-                <li className={`menu__${props.linkName}__item`}><Link to={`/${props.linkName}__nigdy-narodowo`}>nigdy narodowo</Link></li>
+                <li className={`menu__${props.linkName}__item`}><Link to={`/${props.linkName}__miedzynarodowo`}>miedzynarodowo</Link></li>
             </ul>
         </>
         
