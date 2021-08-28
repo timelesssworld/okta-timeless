@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: 10vh 5vw;
-    width: 100%;
+    width: auto;
 }
 .blog-list__wrapper{
     flex-basis: 50%;
@@ -12,21 +12,19 @@
 }
 .blog-post__container{
     display:  inline-block;
-    /* flex-direction: row; */
     width: 80%;
-    /* padding: 0 0 0 20%; */
 }
 .blog-list{
     padding: 0 1rem;
 }
 .blog-post__single-post__wrapper{
-    margin: 10vh 10vw;
-    width: 100%; 
+    margin: 10vh 5vw;
+    width: auto; 
 }
 /* mobile blog list*/
 @media only screen and (max-width: 1000px){
     .blog-list__wrapper{
-        flex-basis:100%;
+        flex-basis:auto;
         padding-bottom:5px;
     }
 }

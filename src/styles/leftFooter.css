@@ -19,7 +19,7 @@
     max-width:100%;
 }
 /* on mobile hide this left footer and move to the bottom */
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 800px){
     .left-footer{
         display: none;
     }
