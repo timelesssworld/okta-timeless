@@ -35,7 +35,8 @@ function BlogRoll({data}){
           ))
         }
       </div>
-    </Layout>)
+    </Layout>
+  )
 }
 BlogRoll.propTypes = {
   data: PropTypes.shape({
