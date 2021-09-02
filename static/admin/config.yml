@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: /timelesssworld/okta-timeless
+  repo: timelesssworld/okta-timeless
   branch: master
   
 media_folder: blog/assets
