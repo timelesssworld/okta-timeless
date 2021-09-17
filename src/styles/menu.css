@@ -11,9 +11,10 @@
     font-size: 1.5rem;
     padding: 0 4%;
     z-index: 100;
+    text-align: center;
 }
-.menu__item:hover{
-    filter: blur(0.7px);
+.menu__item a:hover{
+    color:rgb(121, 121, 121);
 }
 .menu__savoir-vivre{
     padding-top: 25px;
@@ -24,7 +25,6 @@
 }
 .menu__savoir-vivre__item{
     padding: 10px 0;
-    border-top: 1px solid #54595F;
     background-color: #f1f1eb;
 }
 .menu__dress-code{
@@ -36,7 +36,6 @@
 }
 .menu__dress-code__item{
     padding: 10px 0;
-    border-top: 1px solid #54595F;
     background-color: #f1f1eb;
 }
 /* when user move mouse over menu should show 4 categories, they are hidden default */
