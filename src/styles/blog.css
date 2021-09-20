@@ -2,6 +2,8 @@
     display:  inline-block;
     width: 80%;
     margin-bottom: 1vh;
+    font-family: 'CrimsonSemibold';
+    line-height: 1.5rem;
 }
 .blog-list__content-wrapper{
     display: flex;
@@ -28,6 +30,9 @@
     .blog-list__wrapper{
         flex-basis:auto;
         padding-bottom:5px;
+    }
+    .blog-list__content-wrapper{
+        justify-content: space-around
     }
 }
 @media only screen and (max-width: 500px){

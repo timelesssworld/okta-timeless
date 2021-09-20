@@ -1,22 +1,23 @@
 .menu__items{
-    padding: 15px 0 0;
+    padding: 5px 0 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 80px;
+    height: 60px;
     overflow-y: unset;
     background-color: #f1f1ebd7;
 }
 .menu__item{
     font-size: 1.5rem;
-    padding: 0 4%;
+    padding: 0 2%;
     z-index: 100;
+    text-align: center;
 }
-.menu__item:hover{
-    filter: blur(0.7px);
+.menu__item a:hover{
+    color:rgb(121, 121, 121);
 }
 .menu__savoir-vivre{
-    padding-top: 25px;
+    padding-top: 14px;
 }
 .menu__savoir-vivre--hidden{
     visibility: hidden;
@@ -24,11 +25,10 @@
 }
 .menu__savoir-vivre__item{
     padding: 10px 0;
-    border-top: 1px solid #54595F;
     background-color: #f1f1eb;
 }
 .menu__dress-code{
-    padding-top: 25px;
+    padding-top: 14px;
 }
 .menu__dress-code--hidden{
     visibility: hidden;
@@ -36,7 +36,6 @@
 }
 .menu__dress-code__item{
     padding: 10px 0;
-    border-top: 1px solid #54595F;
     background-color: #f1f1eb;
 }
 /* when user move mouse over menu should show 4 categories, they are hidden default */
