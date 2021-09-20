@@ -21,7 +21,7 @@
     flex-direction: row;
 }
 .left-footer__link{
-    flex-basis: 55px;
+    flex-basis: 40px;
     padding-right: 10px;
 }
 .left-footer__social-icon{
