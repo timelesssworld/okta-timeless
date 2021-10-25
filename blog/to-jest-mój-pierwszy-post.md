@@ -10,4 +10,4 @@ mainImage: assets/testtt.jpg
 
 **wszystko działa git pierwsza wersja**
 
-![](assets/man-walking-dog.jpg)
+![jakiś alt](assets/man-walking-dog.jpg "tytuł")
