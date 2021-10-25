@@ -10,8 +10,4 @@ mainImage: assets/testtt.jpg
 
 **wszystko działa git pierwsza wersja**
 
-<div style='max-width: 50%;'>
-
 ![](assets/man-walking-dog.jpg)
-
-</div>
