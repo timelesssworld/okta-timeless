@@ -1,7 +1,7 @@
 ---
 path: /blog/dress-code/biznesowo/to-jest-mój-pierwszy-post
 date: 2021-10-25T20:11:56.607Z
-title: test
+title: to jest mój pierwszy post
 mainImage: assets/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg
 ---
 <div style='text-align:center; color: red; font-size: 2rem;'>test1</div>
