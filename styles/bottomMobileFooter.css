@@ -1,0 +1,11 @@
+.bottom-footer{
+    display:none;
+    margin: 5vh 2vw;
+    font-family: 'CrimsonSemibold';
+}
+@media only screen and (max-width: 900px){
+    .bottom-footer{
+        display:block;
+        border-top: 1px solid #000;
+    }
+}
