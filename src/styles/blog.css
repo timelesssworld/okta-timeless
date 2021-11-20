@@ -26,20 +26,21 @@
     width: auto; 
 }
 /* mobile blog list*/
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1200px){
     .blog-list__wrapper{
         flex-basis:auto;
         padding-bottom:5px;
     }
-    .blog-list__content-wrapper{
-        justify-content: space-around
-    }
+    
 }
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 600px){
     .blog-list__wrapper{
         display:block;
     }
     .blog-list{
         padding:0;
+    }
+    .blog-list__content-wrapper{
+        justify-content: space-around
     }
 }
