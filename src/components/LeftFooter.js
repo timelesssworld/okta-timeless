@@ -21,7 +21,7 @@ function LeftFooter() {
         </a>
         <a
           className="left-footer__link"
-          href="https://www.instagram.com/paulinnna_m/?hl=pl"
+          href="https://www.instagram.com/sztuka_kobiecosci/"
         >
           <img
             className="left-footer__social-icon"

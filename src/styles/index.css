@@ -10,6 +10,7 @@
 @import 'blog.css';
 @import 'leftFooter.css';
 @import 'bottomMobileFooter.css';
+@import 'copyright.css';
 body{
     font-family: 'Charmonman', cursive;
 }
