@@ -1,0 +1,85 @@
+.menu__items{
+    padding: 5px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 60px;
+    overflow-y: unset;
+    background-color: #f1f1ebd7;
+}
+.menu__item{
+    font-size: 1.5rem;
+    padding: 0 2%;
+    z-index: 100;
+    text-align: center;
+}
+.menu__item a:hover{
+    color:rgb(121, 121, 121);
+}
+.menu__savoir-vivre{
+    padding-top: 14px;
+}
+.menu__savoir-vivre--hidden{
+    visibility: hidden;
+    margin-top: -5px;
+}
+.menu__savoir-vivre__item{
+    padding: 10px 0;
+    background-color: #f1f1eb;
+}
+.menu__dress-code{
+    padding-top: 14px;
+}
+.menu__dress-code--hidden{
+    visibility: hidden;
+    margin-top: -5px;
+}
+.menu__dress-code__item{
+    padding: 10px 0;
+    background-color: #f1f1eb;
+}
+/* when user move mouse over menu should show 4 categories, they are hidden default */
+.menu__item:hover .menu__dress-code--hidden{
+    visibility: visible;
+}
+.menu__item:hover .menu__savoir-vivre--hidden{
+    visibility: visible;
+}
+.mobile-menu,.mobile-menu__item{
+    display: none;
+}
+/* mobile menu */
+@media only screen and (max-width: 900px){
+    .mobile-menu__wrapper{
+        display:flex;
+        width: 100%;
+    }
+    .mobile-menu__main-links{
+        width: 50%;
+    }
+    .menu__item{
+        display: none;
+    }
+    .mobile-menu,.mobile-menu__main-links,.mobile-menu__item{
+        display: block;
+    }
+    .mobile-menu__image{
+        height: 80%;
+        cursor:pointer;
+    }
+    .mobile-menu__item{
+        text-align: center;
+        background-color: #f1f1ebd7;
+    }
+    /* handle click button - this class is set default and will be set when he click 
+    2nd time into the button */
+    .mobile-menu__main-links--hidden{
+        display: none;
+    }
+}
+/* hide button for width more than 900px */
+@media only screen and (min-width: 901px){
+    .mobile-menu__main-links{
+        display: none;
+    }
+}
