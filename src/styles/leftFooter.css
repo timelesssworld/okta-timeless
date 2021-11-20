@@ -12,8 +12,14 @@
     left:1%;
     font-family: 'CrimsonSemibold';
 }
+.left-footer__header{
+    margin-top: 50px;
+}
 .left-footer__picture{
     max-width:100%;
+}
+.left-footer__description{
+    line-height: 1.5rem;
 }
 .left-footer__social-icons{
     display: flex;

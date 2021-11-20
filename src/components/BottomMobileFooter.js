@@ -10,7 +10,7 @@ function BottomMobileFooter() {
       <div className="left-footer__social-icons">
         <a
           className="left-footer__link"
-          href="https://www.facebook.com/paulina.malota"
+          href="https://www.facebook.com/Sztuka-Kobieco%C5%9Bci-105163445330994"
         >
           <img
             className="left-footer__social-icon"
@@ -20,7 +20,7 @@ function BottomMobileFooter() {
         </a>
         <a
           className="left-footer__link"
-          href="https://www.instagram.com/paulinnna_m/?hl=pl"
+          href="https://www.instagram.com/sztuka_kobiecosci/"
         >
           <img
             className="left-footer__social-icon"
@@ -40,7 +40,7 @@ function BottomMobileFooter() {
         </a>
         <a
           className="left-footer__link"
-          href="https://pl.pinterest.com/timelessclothes1"
+          href="https://pl.pinterest.com/timelessclothes1/_saved/"
         >
           <img
             className="left-footer__social-icon"
