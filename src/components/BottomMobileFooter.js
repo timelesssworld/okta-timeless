@@ -4,6 +4,7 @@ import linkedin from "../../static/assets/linkedin.png"
 import facebook from "../../static/assets/facebook.png"
 import instagram from "../../static/assets/instagram.png"
 import printerest from "../../static/assets/printerest.png"
+import heart from "../../static/assets/heart.png"
 function BottomMobileFooter() {
   return (
     <div className="bottom-footer">
@@ -47,6 +48,9 @@ function BottomMobileFooter() {
             src={printerest}
             alt="printerest"
           />
+        </a>
+        <a className="left-footer__link" href="https://www.bloglovin.com/">
+          <img className="left-footer__social-icon" src={heart} alt="heart" />
         </a>
       </div>
       <h1 className="bottom-footer__header">O mnie</h1>
