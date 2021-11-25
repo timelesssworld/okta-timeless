@@ -12,7 +12,7 @@
 @import 'bottomMobileFooter.css';
 @import 'copyright.css';
 body{
-    font-family: 'Charmonman', cursive;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 :root {
     --grey: #54595F;
@@ -24,6 +24,7 @@ body{
     text-decoration: none;
     list-style-type: none;
     color: var(--grey);
+    text-align: justify;
 }
 .contact{
     padding-right:50px;

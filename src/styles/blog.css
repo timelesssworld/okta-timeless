@@ -2,7 +2,7 @@
     display:  inline-block;
     width: 80%;
     margin-bottom: 1vh;
-    font-family: 'CrimsonSemibold';
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     line-height: 1.5rem;
 }
 .blog-list__content-wrapper{
