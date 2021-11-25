@@ -1,5 +1,5 @@
 .menu__items{
-    padding: 5px 0 0;
+    padding: 10px 0 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -8,7 +8,7 @@
     background-color: #f1f1ebd7;
 }
 .menu__item{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 0 2%;
     z-index: 100;
     text-align: center;
@@ -21,22 +21,31 @@
 }
 .menu__savoir-vivre--hidden{
     visibility: hidden;
-    margin-top: -5px;
+    font-size: 1rem;
 }
 .menu__savoir-vivre__item{
-    padding: 10px 0;
+    padding: 10px;
     background-color: #f1f1eb;
+    text-align: center;
 }
 .menu__dress-code{
     padding-top: 14px;
 }
 .menu__dress-code--hidden{
     visibility: hidden;
-    margin-top: -5px;
+    font-size: 1rem;
 }
 .menu__dress-code__item{
-    padding: 10px 0;
+    padding: 10px;
     background-color: #f1f1eb;
+    text-align: center;
+}
+@keyframes myMenu {
+    from {opacity: 0.5};
+    to {opacity: 1};
+}
+.menu__item:hover{
+    animation: myMenu 4s;
 }
 /* when user move mouse over menu should show 4 categories, they are hidden default */
 .menu__item:hover .menu__dress-code--hidden{

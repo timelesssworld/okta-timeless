@@ -10,7 +10,7 @@
     padding-right: 2vw;
     top:10px;
     left:1%;
-    font-family: 'CrimsonSemibold';
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .left-footer__header{
     margin-top: 50px;
@@ -19,7 +19,7 @@
     max-width:100%;
 }
 .left-footer__description{
-    line-height: 1.5rem;
+    line-height: 1.2rem;
 }
 .left-footer__social-icons{
     display: flex;
@@ -28,7 +28,7 @@
 }
 .left-footer .left-footer__link{
     flex-basis: 20%;
-    margin: 0 5px
+    margin: 0 5%;
 }
 .left-footer__social-icon{
     width: 100%;
