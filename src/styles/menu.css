@@ -59,36 +59,55 @@
 }
 /* mobile menu */
 @media only screen and (max-width: 900px){
-    .mobile-menu__wrapper{
-        display:flex;
-        width: 100%;
-    }
-    .mobile-menu__main-links{
-        width: 50%;
-    }
-    .menu__item{
+    .menu__items{
         display: none;
     }
-    .mobile-menu,.mobile-menu__main-links,.mobile-menu__item{
-        display: block;
+    *{
+        margin:0;
+        padding:0;
     }
-    .mobile-menu__image{
-        height: 80%;
-        cursor:pointer;
+    body{
+        font-family: Source Sans Pro;
     }
-    .mobile-menu__item{
-        text-align: center;
-        background-color: #f1f1ebd7;
+    #sidebar{
+        position:absolute;
+        width:300px;
+        height:100%;
+        background: #333;
+        left: -300px;
+        transition:2s;
     }
-    /* handle click button - this class is set default and will be set when he click 
-    2nd time into the button */
-    .mobile-menu__main-links--hidden{
-        display: none;
+    #sidebar.active{
+        left:0;
+    }
+        
+    #sidebar ul li {
+        list-style: none;
+        color:#fff;
+        font-size: 20px;
+        padding: 20px 24px;
+    }
+    #sidebar .toggle-btn{
+        position: absolute;
+        top:30px;
+        left:330px;
+        cursor: pointer;
+    }
+    .toggle-btn span{
+        width:45px;
+        height:4px;
+        background:#333;
+        display:block;
+        margin-top:4px;
+    }
+    .mobile__link a{color:#fff}
+    .blog-post__container{
+        margin-top:100px;
     }
 }
 /* hide button for width more than 900px */
 @media only screen and (min-width: 901px){
-    .mobile-menu__main-links{
+    .mobile-menu__wrapper{
         display: none;
     }
 }
