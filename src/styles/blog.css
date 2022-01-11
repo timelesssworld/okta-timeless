@@ -45,3 +45,11 @@
         justify-content: space-around
     }
 }
+@media only screen and (max-width: 900px){
+    .gatsby-image-wrapper>div{
+        width: 100%;
+    }
+    .blog-post__container{
+        width: 100%;
+    }
+}
