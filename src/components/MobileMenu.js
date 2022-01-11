@@ -5,7 +5,7 @@ function MobileMenu() {
     document.querySelector(".toggle-btn").addEventListener("click", () => {
       document.getElementById("sidebar").classList.toggle("active")
     })
-  }, [document])
+  }, [])
 
   return (
     <div className="mobile-menu__wrapper">
